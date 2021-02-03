@@ -35,11 +35,11 @@ list.addEventListener('click', e=>{
 const filterSearch=(term)=>{
 Array.from(list.children)
 .filter((tags)=> !tags.textContent.includes(term))
-.forEach((tags) => tags.classList.add('.hide'));   
+.forEach((tags) => tags.classList.add('hide'));   
 
 Array.from(list.children)
 .filter((tags)=> tags.textContent.includes(term))
-.forEach((tags) => tags.classList.remove('.hide'));   
+.forEach((tags) => tags.classList.remove('hide'));   
 };
 
 ///keyup
